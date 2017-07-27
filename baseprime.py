@@ -10,8 +10,8 @@ primes = [3,5]
 
 ticks = time.time()
 
-#Finds noncomposite numbers up to prime < int
-while prime < 999:
+#Finds noncomposite numbers up to prime < int. not efficient, beacuse sqrt(prime) factors are only needed to test.
+while prime < 9999:
 	prime +=2
 	divs.append(prime-2)
 	for i in divs:
